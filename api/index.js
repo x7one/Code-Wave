@@ -14,8 +14,7 @@ const jwt = require('jsonwebtoken');
 const ejs = require('ejs');
 const fs = require('fs');
 
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+
 
 const secretKey = 'gfdgr';
 const interval = 24 * 60 * 60 * 1000;
