@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./image/icon.png">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>CodeWave</title>
+  </head>
+  <body>
+    <div  class="toaster hidden"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>Good!</div>
+
+    <div class="toasterErr hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ban"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg> Error!
+    </div>
+
+    <div id="pagepiling" class="page">
+      <div id="firstPage" class=" section bg">
+        <header class="header">
+          <div class="header-inner">
+            <div class="header-brand"><a href="/">Code-Wave</a></div>
+            <nav class="header-nav">
+              <a class="header-nav-link" href="#">Главная</a>
+              <a class="header-nav-link" href="#service">Сервисы</a>
+              <a class="header-nav-link" href="#">О компании</a>
+              <a class="header-nav-link" href="#">Связаться</a>
+            </nav>
+            <a class="order righted" href="#order">Заявка</a>
+          </div>
+        </header>
+        <div class="hello">
+          <div class="hello-wraper">
+            <div class="hello_wrapper_left">
+              <h1>Экосистема услуг для запуска и развития Code-Wave проектов</h1>
+            </div>
+            <div class="hello_wrapper_right">
+              <nav class="hello-nav">
+                <a href="#web">Веб-дизайн</a>
+                <a href="#mob">Мобильный дизайн</a>
+                <a href="#hosting">Хостинг сайтов</a>
+                <a href="#vds">Хостинг VDS</a>
+                <a href="#domen">Регистрация доменов</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="hello__bg">
+          <div class="video hello-video">
+            <video
+              class="video__video"
+              reload="auto"
+              no-controls
+              autoplay
+              loop
+              playsinline
+              muted
+              src="./assets/image/header.mp4"
+            >
+              <source src="./assets/image/header.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <div id="web" class="section section_web">
+        <h1 class="section_title">Веб-дизайн</h1>
+        <div class="box">
+          <div>
+            <p>
+              CodeWave является небольшой студией веб-разработки, которая
+              предоставляет полный спектр услуг для создания и реализации
+              веб-проектов
+            </p>
+            <img class="icon" src="./assets/image/web-design1.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="mob" class="section section_mob">
+        <h1 class="section_title">Мобильная разработка</h1>
+        <div class="box">
+          <div>
+            <p>
+              CodeWave предоставляет услуги по разработке UI/UX дизайна для
+              мобильных приложений, создание мобильных приложений,
+              проектирование и дизайн интерфейсов,а также разработку дизайна
+              мобильных приложений
+            </p>
+            <img class="img" src="./assets/image/mob.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="hosting" class="section section_hosting">
+        <h1 class="section_title">Хостинг сайтов</h1>
+        <div class="box">
+          <p>
+            CodeWave может представить услуги по хостингу сайтов, включая
+            оптимизацию веб-сайтов для высоких нагрузок, идентификацию проблем
+            производительности платформы, оптимизацию кода, конфигурации и
+            архитектуры обслуживания в AWS. Они также специализируются на
+            разработке серверных приложений, обработке сложной бизнес-логики и
+            обработке данных. Кроме того, компания предлагает услуги по созданию
+            и поддержке веб-приложений, ориентированных на производительность и
+            масштабируемость
+          </p>
+          <img class="img" src="./assets/image/hosting.png" alt="" />
+        </div>
+      </div>
+      <div id="vds" class="section section_vds">
+        <h1 class="section_title">Хостинг VDS</h1>
+        <div class="box">
+          <p>
+            CodeWave может представить услуги по хостингу VDS, включая
+            разработку серверных приложений, обработку сложной бизнес-логики и
+            обработку данных. Они также являются AWS-консультантами и
+            предоставляют Dev-Ops поддержку. Компания использует предварительно
+            изготовленные компоненты и собирает их в системы, настроенные под
+            конкретные потребности клиента. Кроме того, компания
+            специализируется на оптимизации веб-сайтов для высоких нагрузок,
+            идентификации проблем производительности платформы, оптимизации
+            кода, конфигурации и архитектуры обслуживания в AWS
+          </p>
+          <img class="img" src="./assets/image/vds.png" alt="" />
+        </div>
+      </div>
+      <div id="domen" class="section section_domen">
+        <h1 class="section_title">Регистрация доменов от CodeWave:</h1>
+        <h2 class="section_title">
+          CodeWave может предоставить услуги по регистрации доменов, включая:
+        </h2>
+        <div class="section_list text-justify">
+          <div>
+            Регистрация доменов: CodeWave предоставляет возможность
+            зарегистрировать домены для их сайтов, обеспечивая уникальные и
+            запоминающиеся адреса.
+          </div>
+          <div>
+            Управление доменами: Компания может предоставлять инструменты и
+            сервисы для управления доменами, такими как изменение контактной
+            информации, обновление DNS-записей и управление SSL-сертификатами
+          </div>
+          <div>
+            Доменные имена: CodeWave может предложить клиентам различные
+            варианты доменных имен, чтобы они могли выбрать наиболее подходящий
+            адрес для своего сайта
+          </div>
+          <div>
+            Расширения доменов: Компания может предоставлять различные
+            расширения доменов, такие как .com, .net, .org и другие, чтобы
+            клиенты могли выбрать наиболее подходящее расширение для их бизнеса
+          </div>
+          <div>
+            Дополнительные услуги: CodeWave может предложить дополнительные
+            услуги, такие как хостинг, веб-разработка и Dev-Ops поддержка, чтобы
+            помочь клиентам создать полноценный и эффективный сайт
+          </div>
+        </div>
+      </div>
+      <div id="service" class="section">
+        <div class="content">
+
+          <h1 class="section_title">Сервисы</h1>
+          <div class="service-grid">
+            <div class="block">
+              <h1>Облачные серверы</h1>
+              <p>
+                Гибкие и масштабируемые виртуальные машины с размещением в России
+                и Европе
+              </p>
+              <img class="icon" src="./assets/image/oblach-servery.svg" alt="" />
+            </div>
+            <div class="block">
+              <h1>Выделенные серверы</h1>
+              <p>
+                Аренда физических серверов любых конфигураций, готовых и под
+                заказ.
+              </p>
+              <img class="icon" src="./assets/image/videlene-servery.svg" alt="" />
+            </div>
+            <div class="block">
+              <h1>Облачное S3-хранилище</h1>
+              <p>
+                Универсальное объектное хранилище, совместимое с Amazon S3 API.
+                Надежное хранение и мгновенный доступ к данным.
+              </p>
+              <img class="icon" src="./assets/image/s3-hranilishe.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="section footer" id='order'>
+
+              <div class="left">
+                <div class="left_conteiner">
+                  <div class="left_conteiner_info">
+                    <h1>
+                      Оставьте заявку, <br>чтобы обсудить проект
+                    </h1>
+                    <div>
+                      <a href="mailto:order@Code-Wave.ru">order@Code-Wave.ru</a>
+                      <a href="tel:+79397184124">+7 (939) 718-41-24</a>
+                    </div>
+                  </div>
+                  <div class="info2">
+                    <div>
+                      <h3>Для сотрудничества</h3>
+                      <a href="mailto:info@Code-Wave.ru">info@Code-Wave.ru</a>
+                    </div>
+                    <p>ООО "Код-Вейв", Самара г, Садовая улица, 193</p>
+                  </div>
+                </div>
+              </div>
+            <div class="right">
+              <form id="form"  class="main-order-form">
+                <div>
+                  <h1>Ваши контакты</h1>
+                </div>
+                <div>
+                  <div class="input-inline">
+                          <input
+                            type="text"
+                            id="name"
+                            class="inputName"
+                            name="name"
+                            autocomplete="off"
+                            placeholder="Имя"
+                          />
+
+                          <input
+                            type="phone"
+                            name="phone"
+                            class="inputPhone"
+                            autocomplete="off"
+                            placeholder="+7"
+                          />
+
+                  </div>
+                  <div class="input-email order-section">
+                    <input type="email" name="email" class="inputEmail" placeholder="Почта" autocomplete="off" />
+                  </div>
+                </div>
+                <div>
+                  <h1>О проекте</h1>
+                  <textarea
+                    class="discription"
+                    name="discription"
+                    id="discription"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div>
+                  <select class="select" name="" id="">
+                    <option label="От куда узнали про CodeWave" hidden></option>
+                    <option value="Реклама" label="Реклама"></option>
+                    <option value="Поиск" label="Поиск"></option>
+                    <option value="Рейтинг" label="Рейтинг"></option>
+                    <option value="СМИ" label="СМИ"></option>
+                    <option value="Соцсети" label="Соцсети"></option>
+                    <option value="Блог" label="Блог"></option>
+                    <option value="Рекомендация" label="Рекомендация"></option>
+                    <option value="Другое" label="Другое"></option>
+                  </select>
+                </div>
+                <div class="btn-inner">
+                    <button type="submit" class="btn-order">
+                      <div class="btn-loader btn-loader-hidden"></div>
+                      <span>Отправить</span>
+                    </button>
+                    <div class="text">
+                      Нажав на кнопку, соглашаюсь на обработку персональных данных
+                    </div>
+                </div>
+              </form>
+            </div>
+
+          <div class="hello__bg">
+            <div class="video hello-video">
+              <video
+                class="video__video"
+                reload="auto"
+                no-controls
+                autoplay
+                loop
+                playsinline
+                muted
+                src="./assets/image/ordervideoright.mp4"
+              >
+                <source src="./assets/image/ordervideoright.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a id="toTop" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></a>
+       <div class="loader"></div>
+  </body>
+  <!-- <script src="fullpage.js"></script> -->
+  <!-- <script src="jquery.pagepiling.js"></script>
+  <script src="jquery.pagepiling.min.js"></script> -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="script.js"></script>
+</html>
