@@ -41,14 +41,8 @@ app.post('/api/feedback', async (req, res) => {
                 pass: `${ownMailPass}`,
             },
         });
-        const { name, phone, email } = req.body;
-        const feedback = await prisma.feedbackModel.create({
-            data: {
-                name,
-                phone,
-                email,
-            },
-        });
+        const { name, phone, email, desc } = req.body;
+
 
         await transporter.sendMail({
             from: `ООО 'Code-Wave' <${ownMail}>`,
@@ -77,7 +71,7 @@ app.post('/api/feedback', async (req, res) => {
                 max-width: 600px;
                 margin: 0 auto;
                 padding: 20px;
-                border: 1px solid #ccc;
+
               }
               h2 {
                   color: #007bff;
@@ -116,6 +110,10 @@ app.post('/api/feedback', async (req, res) => {
                   <td> Почта: </td>
                   <td> ${email}</td>
               </tr>
+              <tr>
+                  <td> Описание: </td>
+                  <td> ${desc}</td>
+              </tr>
           </tbody>
          </table>
           </div>
@@ -146,10 +144,10 @@ app.post('/api/feedback', async (req, res) => {
                   max-width: 600px;
                   margin: 0 auto;
                   padding: 20px;
-                  border: 1px solid #ccc;
+
               }
               h2 {
-                  color: #007bff;
+                  color: black;
               }
               p{
                 color: #000;
@@ -159,14 +157,10 @@ app.post('/api/feedback', async (req, res) => {
       <body>
           <div class="container">
             <h2>Вы оставили заявку</h2>
-            <p>Здравствуйте, <strong> ${name}</strong>!</p>
-            <p>Благодарим вас за обращение в нашу компанию. Мы получили вашу заявку и скоро свяжемся с вами.</p>
-            <p>Ниже приведена информация о вашей заявке:</p>
-            <ul>
-                <li><strong>Имя:</strong> ${name}</li>
-                <li><strong>Телефон:</strong> ${phone}}</li>
-                <li><strong>Email:</strong> ${email}</li>
-            </ul>
+            <p>Уважаемый, <strong> ${name}</strong>!</p>
+            <p>От лица всей команды CodeWave мы хотим выразить вам искреннюю благодарность за оказанное доверие и выбор нашей компании в качестве партнера для реализации вашего проекта. Мы рады, что наше предложение о сотрудничестве заинтересовало вас и мы получили возможность работать вместе.
+            Ваш проект представляет для нас особый интерес, и мы с энтузиазмом приступаем к его воплощению в жизнь. Наши специалисты уже приступили к детальному анализу требований и разработке плана реализации, чтобы обеспечить максимальную эффективность и своевременное завершение работ.</p>
+
               <p>С уважением,<br>Команда Code-Wave</p>
           </div>
       </body>
