@@ -10,16 +10,6 @@ const ownMailPass = process.env.EPASSWORD;
 
 const app = express();
 
-const jwt = require('jsonwebtoken');
-const ejs = require('ejs');
-const fs = require('fs');
-
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
-
-const secretKey = 'gfdgr';
-const interval = 24 * 60 * 60 * 1000;
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
