@@ -81,10 +81,10 @@ function zayavkaError(){
 
 }
 function validateForm(e) {
-  var inputName = document.querySelector('.inputName')
-  var inputPhone = document.querySelector('.inputPhone')
-  var inputEmail = document.querySelector('.inputEmail')
-  var inputDesc = document.querySelector('.discription')
+  var inputName = e.target.querySelector('.inputName')
+  var inputPhone = e.target.querySelector('.inputPhone')
+  var inputEmail = e.target.querySelector('.inputEmail')
+  var inputDesc = e.target.querySelector('.discription')
 
   if (inputName.value === '') {
       setTimeout(zayavkaError, 1200);
@@ -102,6 +102,7 @@ function validateForm(e) {
       setTimeout(zayavkaError, 1200);
       return false;
   }
+  console.log(inputDesc.value)
 
 
 

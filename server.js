@@ -41,7 +41,9 @@ app.post('/api/feedback', async (req, res) => {
                 pass: `${ownMailPass}`,
             },
         });
-        const { name, phone, email, desc } = req.body;
+        const { name, phone, email, discription } = req.body;
+        console.log(req.body)
+        console.log(discription)
 
 
         await transporter.sendMail({
@@ -112,7 +114,7 @@ app.post('/api/feedback', async (req, res) => {
               </tr>
               <tr>
                   <td> Описание: </td>
-                  <td> ${desc}</td>
+                  <td> ${discription}</td>
               </tr>
           </tbody>
          </table>
