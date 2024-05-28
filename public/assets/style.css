@@ -14,7 +14,6 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
 *,
@@ -44,9 +43,6 @@ p {
 .page {
     width: 100%;
     height: 100%;
-
-    /* background: #000000 url("../image/background.jpg.jpg") center no-repeat;
-    background-size: cover ; */
 }
 
 .bg {
@@ -54,13 +50,6 @@ p {
     align-items: left !important;
     width: 100% !important;
     height: 100% !important;
-
-    /* height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 /*  Header
